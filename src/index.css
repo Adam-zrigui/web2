@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+background-color:  #171a21;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::selection {
+    background: #FF009E;
+    color: #fff;
+    border-radius: 15px;
+}
+
+
+ol {
+    list-style-type: upper-roman;
+}
+
+  input:invalid {
+    animation: shake .3s;
+  }
+  @keyframes shake {
+25% {
+transform: translateX(4px);
+}
+50% {
+  transform: translateX(-4px);
+}
+75% {
+  transform: translateX(4px);
+}
+  }
+
+::-webkit-scrollbar {
+    width: 15px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #524f4f;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }
